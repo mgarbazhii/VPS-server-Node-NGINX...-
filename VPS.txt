@@ -47,7 +47,7 @@ Config VPS server for Node JS applications
    - проверяем работоспособность nginx
       systemctl status nginx
 
-   
+4. 
    
 
    
