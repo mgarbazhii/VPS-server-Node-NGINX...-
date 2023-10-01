@@ -49,6 +49,8 @@ Config VPS server for Node JS applications
 
 4. 
    
+ssh -T git@github.com  --- проверить, что пересылка работает с сервером 
+cat id_rsa.pub|pbcopy ---- копируем ключ из файла в буфер обмена
 
    
    
