@@ -2,13 +2,16 @@
 
 ### 1. Арендуем VPS сервер
 
-2. Подключаемся к серверу с помощью команды
-      `SSH <name user>@<IP adress>`
+### 2. Подключаемся к серверу с помощью команды  
+```bash
+      ssh <name user>@<IP adress or domain name>
+```
    
-3. Подготовка операционной системы 
-   Проверяем установленные пакеты   
-      `apt list --installed`
-
+### 3. Подготовка операционной системы 
+- [sdfdfghrfhrdhrth](MyLink)
+```bash   
+apt list --installed  #Проверяем установленные пакеты 
+```
    Убиваем процессы не нужные на сервере (например, часто устанавливают по умолчанию apache2)
       `sudo killall <process name>`
    - если процесс завис
@@ -48,10 +51,11 @@
    - проверяем работоспособность nginx
       `systemctl status nginx`
 
-4. 
+### 4. 
    
 `ssh -T git@github.com`  --- проверить, что пересылка работает с сервером 
 `cat id_rsa.pub|pbcopy` ---- копируем ключ из файла в буфер обмена
 
-   
+[MyLink]: <http://expressjs.com>
+[git-repo-url]: <https://github.com/joemccann/dillinger.git>  
    
