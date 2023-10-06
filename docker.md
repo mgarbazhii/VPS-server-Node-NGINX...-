@@ -17,6 +17,8 @@ docker pull <name_img>
 docker run --name <custom container name> <image name> 
 Запуск контейнера в режиме Interective Terminal (после запуска SH в контейнере)
 docker run -i -t <image name>
+Автоматическое удаление контейнера после остановки
+docker run --rm <image name>
 Запуск контейнера в фоновом режиме (Detached - отсоединенный)
 docker run -d <image name> 
 Запустить команду внутри запущенного контейнера
@@ -24,6 +26,10 @@ docker exec -it <container ID/name> <команда>
 (Пример: Запустить BASH внутри контейнера: docker exec -it 98sf98uv98s bash)
 Публикация портов
 docker run -p <внешний порт>:<контейнер порта> <image name>
+Подключение томов (папок)
+docker run -v <локальная папка>:<папка в контейнере> <image name>
+(Пример: docker run -v ${PWD}:/usr/share/nginx/html nginx # Вместо папки в контейнере будет текущаю папка)
+
 Внутри контейнера:
 hostname # Запросить id контейнера
 hostname -i # Запросить IP адрес котейнера
