@@ -8,7 +8,6 @@
 ```
    
 ### 3. Подготовка операционной системы 
-- [sdfdfghrfhrdhrth](MyLink)
 ```bash   
 apt list --installed  #Проверяем установленные пакеты 
 ```
