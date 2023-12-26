@@ -18,8 +18,8 @@ apt list --installed  #Проверяем установленные пакет�
       `sudo killall -s SIGKILL <process name>` 
        
    Удаляем ненужные пакеты
-      `sudo apt-get purge apache2*'
-      
+      `sudo apt-get purge apache2*`
+      или
       `sudo apt-get remove <package name>`
 
    Чистим пакеты которые не используются
